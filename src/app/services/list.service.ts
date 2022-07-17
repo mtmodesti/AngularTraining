@@ -12,4 +12,8 @@ export class ListService {
     return animals.filter(a => a.name != animal.name)
   }
 
+  postAnimal(animals: Animal[], animal:Animal){
+    return animals.push(animal)
+  }
+
 }

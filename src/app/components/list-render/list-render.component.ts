@@ -30,4 +30,10 @@ export class ListRenderComponent implements OnInit {
   removeAnimal(animal:Animal){
     this.animals = this.listService.remove(this.animals, animal)
   }
+
+  postAnimal(){
+  this.listService.postAnimal(this.animals, {age:8, name:'Nero', type:'Cat'})
+  }
+
+
 }
