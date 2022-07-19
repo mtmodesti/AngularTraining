@@ -31,7 +31,7 @@ export class ListRenderComponent implements OnInit {
   }
 
   postAnimal(){
-  this.listService.postAnimal(this.animals, {age:8, name:'Nero', type:'Cat'})
+  this.listService.postAnimal(this.animals, {id: 3, age:8, name:'Nero', type:'Cat'})
   }
 
   getAnimals():void{
